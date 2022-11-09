@@ -21,8 +21,6 @@ export class ArticleService {
         {
           next: 
             (res) => {
-              console.log(res);
-              debugger;
               // TODO: add mapper and separate http service
               let articles = (<Object[]>(res as any).articles).map((article: any) => (<Artcile>{...article}));
               this._articles.next(articles);
