@@ -10,13 +10,15 @@ import { ArticleComponent } from './article/article.component';
 import { BASE_URL } from './base-url.token';
 import { LoginComponent } from './login/login.component';
 import { App } from './app.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     ArticleListComponent,
     ArticleComponent,
     LoginComponent,
-    App
+    App,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

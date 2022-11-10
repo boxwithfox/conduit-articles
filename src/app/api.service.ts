@@ -21,7 +21,7 @@ export class ApiService {
   login(email: string, password: string): Observable<{ user: User }> {
     return this.httpClient.post<{ user: User}>(`${this.base_url}/users/login`, {
       user: { email, password }
-    }
-  )
+      }
+    )
   }
 }
